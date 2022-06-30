@@ -3,6 +3,7 @@ const textElem = document.querySelector("[data-text")
 
 async function setup() {
    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+  //  Bug check line bellow to fix
    video.srcObject = stream;
 
    // Check if video playing
